@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+$(document).on('ready', function(){
+    var timeout = 0;
+    $('.nav').hover(function(){
+         $('.dropdown-menu').slideDown('fast');
+    },function(){
+          timeout = setTimeout(hideMenu,300);
+     });
+ 
+    $(".dropdown-menu").hover(function(){
+        clearTimeout(timeout);
+    },function(){
+        hideMenu();
+    });
+ });
+ 
+ function hideMenu(){
+     $(".dropdown-menu").slideUp('fast');
+  }
+  </script>
+<nav class="navbar  navbar-static-top navbar-default">
+             <div class="container">
+               <div id="cls">
+                 <div class="navbar-header center">
+                   <div class="navbar-header">
+                       <h1><center><button class="btn"></button>PERSONAL DETAILS</center></h1></button>
+                     <center><a href="/"><img class="logo" src="carrom.jpg" height="400" width="400"></a></center>
+                     <ul id="main-menu" class="nav navbar-nav ref">
+                       <li class="dropdown dropdown-large option">
+                         <a id="drop-to" href="HOME" class="dropdown-toggle firstTextOption" data-toggle="dropdown">personal details</a>
+                           <ul class="dropdown-menu dropdown-menu-large row change-f">
+                             <li class="n-smasd">
+                                 <ul>
+                                     <li class="dropdown-header title">Name:DHANALAKSHMI</a></li>
+                                 </ul>
+                                 <ul>
+                                     <li class="dropdown-header title">contact no:98765432876</a></li>
+                                 </ul>
+                                 <ul>
+                                     <li class="dropdown-header title">mail id:dhanababu118@gmail.com</a></li>
+                                 </ul>
+                                 <ul>
+                                     <li class="dropdown-header title">adress:99 mk nagar
+                                         
+                                     </a></li>
+                                 </ul>
+                                 <ul>
+                                     <li class="dropdown-header title">city:chennai</li>
+                                 </ul>
+                             </li>
+                           </ul>
+                       </li>
+                       <li class="dropdown dropdown-large option hidden-sm hidden-xs">|</li>
+                       <li class="dropdown dropdown-large option">
+                         <a id="drop-to" href="project" class="dropdown-toggle firstTextOption" data-toggle="dropdown">project</a>
+                         <ul class="dropdown-menu dropdown-menu-large row change-f">
+                             <li class="col-sm-3 option-sm">
+                                 <ul>
+                                     <li class="dropdown-header title">arduino-nano-ieee-project</a></li>
+                                 </ul>
+                                 <ul>
+                                     <li class="dropdown-header title">color-based-sorting-iot-project.
+                                    </li>
+                                 </ul>
+                             </li>
+                         </ul>
+                       </li>
+                       <li class="dropdown dropdown-large option hidden-sm hidden-xs">|</li>
+                       <li class="dropdown dropdown-large option">
+                         <a id="drop-to" href="about" class="dropdown-toggle firstTextOption"> about more </a>
+                       </li>
+                     </ul>                
+                   </div>
+                   </div>
+                </body>
+                </html>

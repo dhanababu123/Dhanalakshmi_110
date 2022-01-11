@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+
+   <script>
+$(document).ready(function(){
+$('#h').click(function(){
+$('tr:odd').hide();
+
+});
+
+$('#s').click(function(){
+$('tr:odd').show();
+
+});
+$('#b1').click(function(){
+  //  $('ul li:first').hide()//only kiwi
+  // $('ul li:first-child').hide()//only kiwi and dosa
+   $('ul li:nth-child(2)').hide()//only banana
+})
+
+});
+
+   </script>
+</head>
+<body>
+    <button id='h'>Hide</button>
+    <button id='s'>Show</button>
+
+    <table style="border: 5px solid deeppink">
+        <tr>
+            <th>rollno</th>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ankita</td>
+
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Amol</td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Nikita</td>
+
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Pranita</td>
+
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Kamlesh</td>
+
+        </tr>
+    </table>
+<hr/>
+<ul>
+    <li>kiwi</li>
+    <li>banana</li>
+    <li>mango</li>
+    <li>grapes</li>
+</ul>
+<ul>
+    <li>dosa</li>
+    <li>idly</li>
+    <li>uttappam</li>
+    <li>smothing</li>
+</ul>
+<button id="b1">click</button>
+</body>
+</html>

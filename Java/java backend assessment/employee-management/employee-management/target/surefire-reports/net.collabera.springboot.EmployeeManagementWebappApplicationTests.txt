@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: net.collabera.springboot.EmployeeManagementWebappApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.331 s <<< FAILURE! - in net.collabera.springboot.EmployeeManagementWebappApplicationTests
+net.collabera.springboot.EmployeeManagementWebappApplicationTests  Time elapsed: 3.327 s  <<< ERROR!
+java.lang.IllegalStateException: Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test
+
